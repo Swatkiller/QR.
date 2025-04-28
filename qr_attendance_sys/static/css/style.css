@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+body {
+  background-color: #a5b5bf;
+  margin: 0;
+  padding: 0;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 65px;
+  height: 100px;
+}
+
+.logo-brand img {
+  max-width: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-brand:hover img {
+  transform: scale(1.02);
+  animation: glow 0.3s ease-in-out forwards;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(219, 199, 124, 0.8),
+      0 0 30px rgba(219, 199, 124, 0.7);
+  }
+}
+
+.attendance_topic {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+
+.attendance_topic h1 {
+  background-color: #444444;
+  color: #ffffff;
+  text-align: center;
+  height: 60px;
+  width: 1150px;
+  font-family: "Sriracha", sans-serif;
+  border-radius: 20px;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin-top: 150px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.footer-container {
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+  background-color: #444444;
+}
+
+.footer-container h6 {
+  padding-top: 5px;
+  color: #ddd;
+  margin: 0;
+}
+
+.admin_img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 225px;
+  width: 250px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.admin_img:hover {
+  transform: scale(1.05);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.7);
+}
+
+.student-details-container,
+.qr-container,
+.attendance-container {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+a.btn0-container {
+  text-decoration: none;
+  display: block;
+}
+
+a.btn0-container:hover {
+  text-decoration: none;
+}
+
+.btn0 {
+  display: block;
+  margin: 15px auto 0;
+  height: 50px;
+  width: 100%;
+  max-width: 170px;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #444444;
+  color: #ddd;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn0:focus,
+.btn0:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.hover-effect:hover .btn0 {
+  transform: translateY(-2.5px);
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logout_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 125px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: #444444;
+  color: #ddd;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logout_btn:focus,
+.logout_btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.logout_btn:hover {
+  transform: scale(1.03);
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logout_btn i {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.details_container {
+  margin-top: 15vh;
+  margin-left: 25vh;
+  height: 500px;
+  width: 1125px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-outline {
+  margin-bottom: 15px;
+}
+
+.upload-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-top: 0;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-upload {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#uploadedImage {
+  position: absolute;
+  top: -25px;
+  left: 30px;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+  height: 130px;
+  margin-top: 10px;
+}
+
+.address-form-outline {
+  position: relative;
+  margin-top: -50px;
+}
+
+.position-relative figcaption {
+  text-align: center;
+  margin-top: -25px;
+}
+
+.reg-footer {
+  margin-top: 60vh;
+  margin-bottom: 3vh;
+}
